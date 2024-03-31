@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { PersonTableComponent } from './components/person-table/person-table.component';
 import { Person } from './shared/interfaces/person';
+import { EventBingExampleComponent } from './components/event-bing-example/event-bing-example.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [PersonTableComponent],
+  imports: [PersonTableComponent, EventBingExampleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
