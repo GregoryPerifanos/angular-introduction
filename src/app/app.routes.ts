@@ -5,7 +5,10 @@ import { ComponentInputExampleComponent } from './components/component-input-exa
 import { ForDirectiveExampleComponent } from './components/for-directive-example/for-directive-example.component';
 
 export const routes: Routes = [
-    {path: 'component-input-example', component: ComponentInputExampleComponent},
+    {
+        path: 'component-input-example',
+        component: ComponentInputExampleComponent
+    },
     {path: 'for-directive-example', component: ForDirectiveExampleComponent},
     {path: 'event-bind-example', component: EventBindExampleComponent},
     {path: '', component: WelcomeComponent },
