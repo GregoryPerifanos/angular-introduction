@@ -1,5 +1,12 @@
 import { Component, Input } from '@angular/core';
-import { Person } from 'src/app/shared/interfaces/person';
+import { EPerson, Person } from 'src/app/shared/interfaces/person';
+import {
+  MatDialog,  MAT_DIALOG_DATA,  MatDialogRef,
+  MatDialogTitle,
+  MatDialogContent,
+  MatDialogActions,
+  MatDialogClose,
+} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-person-table',
@@ -9,6 +16,13 @@ import { Person } from 'src/app/shared/interfaces/person';
   styleUrl: './person-table.component.css'
 })
 export class PersonTableComponent {
-  @Input() person: Person | undefined; 
+  @Input() person: Person | EPerson | undefined; 
   
+  isPerson() {
+    return this.person && 'address' in this.person;
+  }
+
+  isEPerson() {
+    return this.person && 'education' in this.person;
+  }
 }
