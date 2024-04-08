@@ -6,6 +6,7 @@ import { ForDirectiveExampleComponent } from './components/for-directive-example
 import { SimpleDatatableComponent } from './components/simple-datatable/simple-datatable.component';
 import { SimpleDatatableExampleComponent } from './components/simple-datatable-example/simple-datatable-example.component';
 import { ComponentOutputExampleComponent } from './components/component-output-example/component-output-example.component';
+import { TemplateDrivenFormExampleComponent } from './components/template-driven-form-example/template-driven-form-example.component';
 
 export const routes: Routes = [
     {
@@ -16,6 +17,7 @@ export const routes: Routes = [
     {path: 'event-bind-example', component: EventBindExampleComponent},
     {path: 'simple-datatable-example', component: SimpleDatatableExampleComponent},
     {path: 'component-output-example', component: ComponentOutputExampleComponent},
+    {path: 'template-driven-form-example', component: TemplateDrivenFormExampleComponent},
     {path: '', component: WelcomeComponent },
     
 ];
