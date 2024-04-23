@@ -54,6 +54,10 @@ export class ListGroupMenuComponent {
     {
       text: "Fun For Nerds",
       routerLink: 'fun-for-nerds'
+    },
+    {
+      text: 'CRUD Example',
+      routerLink: 'crud-example'
     }
 
 
